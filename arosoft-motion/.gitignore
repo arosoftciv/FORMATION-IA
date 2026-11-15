@@ -1,4 +1,4 @@
 node_modules
-out/*.mp4
-!out/.gitkeep
+out/*-4k.mp4
 .DS_Store
+web/videos/*.mp4
