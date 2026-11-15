@@ -5,6 +5,7 @@
  * → mettre à jour sa durée ici : toutes les scènes se recalent seules.
  */
 import vo from "../scripts/voiceover.json";
+import wordTimings from "../scripts/word_timings.json";
 
 export const FPS = 30;
 export const WIDTH = 1080;
@@ -19,7 +20,7 @@ const GAP_AFTER: Record<string, number> = {
   "05a": 0.3, "05b": 0.45, "06": 0.9, "07": 0.9, "08": 0.9,
   "09": 2.1, // démo BOUM / CLIC / WHOOSH après la phrase
   "10": 0.7, "11": 1.1, "12": 1.7, "13": 1.6, "14": 1.3,
-  "15a": 0.6, "15b": 0.5, "15c": 1.6, "16": 6.5, // CTA tenu à l'écran
+  "15a": 0.6, "15b": 0.5, "15c": 1.2, "16": 6.5, // CTA tenu à l'écran
 };
 const LEAD_IN = 0.12; // le hook démarre quasi immédiatement
 
@@ -39,14 +40,18 @@ for (const s of SEGMENTS) {
 export const TOTAL_SECONDS = cursor;
 export const TOTAL_FRAMES = Math.ceil(cursor * FPS);
 
+const MEASURED = wordTimings as unknown as Record<string, Record<string, number>>;
+
 /**
  * Repère temporel d'un mot dans un segment (frame absolue).
- * Estimation proportionnelle à la position du texte dans la phrase,
- * affinée par `offset` (secondes) après écoute de la prise.
+ * 1) temps MESURÉ sur la prise (scripts/word_timings.json) si disponible ;
+ * 2) sinon estimation proportionnelle à la position du texte + `offset` (s).
  */
 export const cue = (id: string, phrase?: string, offset = 0): number => {
   const s = VO[id];
   if (!phrase) return Math.round((s.start + offset) * FPS);
+  const m = MEASURED[id]?.[phrase];
+  if (typeof m === "number") return Math.round((s.start + m) * FPS);
   const idx = s.text.indexOf(phrase);
   const ratio = idx < 0 ? 0 : idx / s.text.length;
   return Math.round((s.start + s.dur * ratio + offset) * FPS);

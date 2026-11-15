@@ -1,22 +1,102 @@
 [
- {"id":"01","dur":4.72,"text":"STOP ! Cette vidéo que vous regardez… personne ne l'a filmée."},
- {"id":"02","dur":4.80,"text":"Pas de caméra. Pas d'acteur. Pas de décor. Aucun tournage !"},
- {"id":"03","dur":2.96,"text":"Et pourtant… vous êtes toujours là."},
- {"id":"04a","dur":8.96,"text":"Ce qui retient votre attention, ce sont des mots qui bougent, des chiffres qui défilent, des formes qui se transforment et des animations parfaitement synchronisées."},
- {"id":"04b","dur":7.04,"text":"Ça s'appelle le motion design. Et chez Aro Soft, nous transformons vos idées en vidéos qui captent l'attention."},
- {"id":"05a","dur":12.72,"text":"Regardez bien. Une image fixe ? On la regarde… et on passe. Mais un texte qui apparaît, une carte qui se déploie, un chiffre qui explose à l'écran… Votre regard suit le mouvement."},
- {"id":"05b","dur":7.28,"text":"Mais attention ! Faire bouger des éléments ne suffit pas. Ce qui fait la différence, c'est la qualité de l'animation."},
- {"id":"06","dur":5.28,"text":"La vitesse : on accélère, puis on ralentit naturellement."},
- {"id":"07","dur":4.48,"text":"Le flou de mouvement : tout devient plus fluide."},
- {"id":"08","dur":5.84,"text":"Les transitions : une forme se transforme en une autre, sans rupture."},
- {"id":"09","dur":5.28,"text":"Et le son : chaque impact tombe exactement au bon moment."},
- {"id":"10","dur":13.12,"text":"Maintenant… retirons tout ça. Plus de mouvement. Plus de transitions. Plus d'effets. Juste des images fixes. Vous sentez la différence ? Vos clients aussi."},
- {"id":"11","dur":2.96,"text":"Chez Aro Soft, nous donnons vie à vos messages."},
- {"id":"12","dur":1.68,"text":"Vous avez un produit à lancer ?"},
- {"id":"13","dur":3.60,"text":"Un service à présenter ? Une application à faire découvrir ?"},
- {"id":"14","dur":4.80,"text":"Une promotion à annoncer ? Ou simplement une entreprise à faire connaître ?"},
- {"id":"15a","dur":14.08,"text":"Nous transformons votre message en une vidéo moderne, dynamique et professionnelle. Du scénario à la voix-off, des animations aux effets sonores, nous nous occupons de la création. Et tout ça… sans caméra, sans acteur et sans tournage."},
- {"id":"15b","dur":10.64,"text":"Aujourd'hui, vos clients défilent devant des centaines de contenus. La question n'est plus seulement : que voulez-vous leur dire ? Mais plutôt : comment allez-vous capter leur attention ?"},
- {"id":"15c","dur":11.12,"text":"Vous êtes encore devant cette vidéo. C'est exactement l'effet que nous voulons créer pour votre marque. Aro Soft. Vos idées prennent vie."},
- {"id":"16","dur":13.84,"text":"Vous voulez votre propre vidéo motion design ? Écrivez MOTION en message privé, ou contactez Aro Soft sur WhatsApp au plus deux cent vingt-cinq, zéro cinq, quatre-vingt-quatre, zéro six, zéro six, zéro six."}
+ {
+  "id": "01",
+  "dur": 4.754,
+  "text": "STOP ! Cette vidéo que vous regardez… personne ne l'a filmée."
+ },
+ {
+  "id": "02",
+  "dur": 4.833,
+  "text": "Pas de caméra. Pas d'acteur. Pas de décor. Aucun tournage !"
+ },
+ {
+  "id": "03",
+  "dur": 3.004,
+  "text": "Et pourtant… vous êtes toujours là."
+ },
+ {
+  "id": "04a",
+  "dur": 8.986,
+  "text": "Ce qui retient votre attention, ce sont des mots qui bougent, des chiffres qui défilent, des formes qui se transforment et des animations parfaitement synchronisées."
+ },
+ {
+  "id": "04b",
+  "dur": 7.079,
+  "text": "Ça s'appelle le motion design. Et chez Aro Soft, nous transformons vos idées en vidéos qui captent l'attention."
+ },
+ {
+  "id": "05a",
+  "dur": 12.748,
+  "text": "Regardez bien. Une image fixe ? On la regarde… et on passe. Mais un texte qui apparaît, une carte qui se déploie, un chiffre qui explose à l'écran… Votre regard suit le mouvement."
+ },
+ {
+  "id": "05b",
+  "dur": 7.314,
+  "text": "Mais attention ! Faire bouger des éléments ne suffit pas. Ce qui fait la différence, c'est la qualité de l'animation."
+ },
+ {
+  "id": "06",
+  "dur": 5.329,
+  "text": "La vitesse : on accélère, puis on ralentit naturellement."
+ },
+ {
+  "id": "07",
+  "dur": 4.519,
+  "text": "Le flou de mouvement : tout devient plus fluide."
+ },
+ {
+  "id": "08",
+  "dur": 5.878,
+  "text": "Les transitions : une forme se transforme en une autre, sans rupture."
+ },
+ {
+  "id": "09",
+  "dur": 5.329,
+  "text": "Et le son : chaque impact tombe exactement au bon moment."
+ },
+ {
+  "id": "10",
+  "dur": 13.166,
+  "text": "Maintenant… retirons tout ça. Plus de mouvement. Plus de transitions. Plus d'effets. Juste des images fixes. Vous sentez la différence ? Vos clients aussi."
+ },
+ {
+  "id": "11",
+  "dur": 3.004,
+  "text": "Chez Aro Soft, nous donnons vie à vos messages."
+ },
+ {
+  "id": "12",
+  "dur": 1.724,
+  "text": "Vous avez un produit à lancer ?"
+ },
+ {
+  "id": "13",
+  "dur": 3.631,
+  "text": "Un service à présenter ? Une application à faire découvrir ?"
+ },
+ {
+  "id": "14",
+  "dur": 4.833,
+  "text": "Une promotion à annoncer ? Ou simplement une entreprise à faire connaître ?"
+ },
+ {
+  "id": "15a",
+  "dur": 14.106,
+  "text": "Nous transformons votre message en une vidéo moderne, dynamique et professionnelle. Du scénario à la voix-off, des animations aux effets sonores, nous nous occupons de la création. Et tout ça… sans caméra, sans acteur et sans tournage."
+ },
+ {
+  "id": "15b",
+  "dur": 10.684,
+  "text": "Aujourd'hui, vos clients défilent devant des centaines de contenus. La question n'est plus seulement : que voulez-vous leur dire ? Mais plutôt : comment allez-vous capter leur attention ?"
+ },
+ {
+  "id": "15c",
+  "dur": 11.154,
+  "text": "Vous êtes encore devant cette vidéo. C'est exactement l'effet que nous voulons créer pour votre marque. Aro Soft. Vos idées prennent vie."
+ },
+ {
+  "id": "16",
+  "dur": 13.871,
+  "text": "Vous voulez votre propre vidéo motion design ? Écrivez MOTION en message privé, ou contactez Aro Soft sur WhatsApp au plus deux cent vingt-cinq, zéro cinq, quatre-vingt-quatre, zéro six, zéro six, zéro six."
+ }
 ]

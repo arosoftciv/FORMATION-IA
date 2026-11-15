@@ -108,7 +108,7 @@ export const SoundDesign: React.FC = () => {
       ))}
       {sfx.map((x, i) => (
         <Sequence key={i} from={x.at} durationInFrames={90} name={`SFX ${x.name}`}>
-          <Audio src={staticFile(`audio/sfx/${x.name}.wav`)} volume={x.vol} />
+          <Audio src={staticFile(`audio/sfx/${x.name}.wav`)} volume={(x.vol ?? 0.5) * 0.75} />
         </Sequence>
       ))}
     </>

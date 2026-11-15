@@ -33,27 +33,20 @@ npm run typecheck
 Lecteur web : copier `out/arosoft-motion-final.mp4` dans `web/videos/` puis servir le dossier
 (`npx serve web`).
 
-## Voix-off — IMPORTANT
+## Voix-off
 
-La voix-off officielle a été générée sur **ElevenLabs** (voix « Isac », accent ivoirien,
-modèle `eleven_v4`), un fichier par phrase, dans le flow
-« AroSoft — Voix-off motion design » du compte ElevenLabs.
+Voix **« Isac »** d'ElevenLabs (voix masculine grave, accent ivoirien, modèle `eleven_v4`),
+une prise par phrase (`public/audio/vo/01.mp3` … `16.mp3`, volume harmonisé à −15 LUFS).
+Les prises sources sont dans le flow ElevenLabs « AroSoft — Voix-off motion design ».
 
-L'environnement de production n'avait pas le droit de télécharger les fichiers
-(domaine `elevenlabsusercontent.com` bloqué). Le rendu actuel utilise donc une
-**voix provisoire de synthèse locale** (espeak-ng / mbrola), calée exactement sur les
-durées des prises ElevenLabs.
+Synchronisation :
+- `scripts/voiceover.json` : texte et durée exacte de chaque prise → tout le montage en découle ;
+- `scripts/word_timings.json` : début de chaque mot-repère, **mesuré** sur les prises
+  (détection des silences). Les animations et les effets sonores s'y calent via `cue()`.
 
-Pour passer à la vraie voix :
-1. Télécharger chaque prise depuis le flow ElevenLabs.
-2. Les enregistrer dans `public/audio/vo/` avec les mêmes noms
-   (`01.mp3`, `02.mp3`, `03.mp3`, `04a.mp3`, … `16.mp3` — voir `scripts/voiceover.json`).
-3. `npm run render`.
-
-Le montage dépend des durées listées dans `scripts/voiceover.json` : si vous changez de
-prise, mettez à jour `dur` et toutes les scènes se recalent automatiquement
-(`src/timeline.ts`). Les repères mot à mot sont estimés à partir de la position du mot dans
-la phrase et peuvent être affinés via le 3e argument de `cue()`.
+Changer de voix : remplacer les MP3 (mêmes noms), mettre à jour `dur` dans
+`voiceover.json` et les repères dans `word_timings.json`, puis `npm run render`.
+`scripts/placeholder_vo.py` régénère une voix de synthèse locale si besoin (maquette hors ligne).
 
 ## Structure
 
@@ -70,8 +63,9 @@ src/
 scripts/
   remove_bg.py           détourage du logo (alpha par dé-mélange du blanc)
   make_sfx.py            sound design procédural (boom, clic, whoosh, riser…) + nappe
-  placeholder_vo.py      voix provisoire calée sur les durées ElevenLabs
-  voiceover.json         texte et durée de chaque segment de voix
+  placeholder_vo.py      voix de maquette hors ligne (espeak-ng), non utilisée dans le rendu
+  voiceover.json         texte et durée de chaque prise de voix
+  word_timings.json      repères mot à mot mesurés sur les prises
 ```
 
 ## Choix et limites

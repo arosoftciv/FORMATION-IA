@@ -1,0 +1,18 @@
+{
+  "_doc": "Début mesuré (secondes, dans le segment) de chaque repère. Mesuré par silencedetect sur les prises ElevenLabs « Isac ». cue() les utilise en priorité.",
+  "01": { "Cette": 1.49, "personne": 3.49 },
+  "02": { "Pas de caméra": 0.0, "Pas d'acteur": 1.46, "Pas de décor": 2.59, "Aucun": 3.72 },
+  "03": { "vous": 1.70 },
+  "04a": { "des mots": 2.2, "des chiffres": 3.34, "des formes": 4.97, "des animations": 6.75 },
+  "04b": { "Et chez": 2.75 },
+  "05a": { "Une image": 1.65, "et on passe": 4.49, "Mais un texte": 5.73, "une carte": 7.3, "un chiffre": 8.85, "Votre regard": 10.99 },
+  "05b": { "Faire bouger": 1.49, "Ce qui fait": 4.24 },
+  "06": { "on accélère": 2.26 },
+  "10": { "Plus de mouvement": 3.15, "Plus de transitions": 4.51, "Plus d'effets": 5.95, "Juste": 7.03, "Vous sentez": 10.28, "Vos clients": 12.14 },
+  "13": { "Une application": 1.79 },
+  "14": { "Ou simplement": 2.01 },
+  "15a": { "Du scénario": 5.11, "à la voix-off": 5.85, "des animations": 6.6, "nous nous occupons": 7.35, "Et tout ça": 8.54 },
+  "15b": { "La question": 4.28, "comment": 8.69 },
+  "15c": { "C'est exactement": 2.95, "Aro Soft": 8.06, "Vos idées": 9.59 },
+  "16": { "Écrivez": 3.03, "WhatsApp": 6.9 }
+}
