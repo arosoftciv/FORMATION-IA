@@ -35,7 +35,7 @@ Lecteur web : copier `out/arosoft-motion-final.mp4` dans `web/videos/` puis serv
 
 ## Voix-off
 
-Voix **« Isac »** d'ElevenLabs (voix masculine grave, accent ivoirien, modèle `eleven_v4`),
+Voix **« Brian »** d'ElevenLabs (voix masculine grave et résonante, modèle `eleven_v4`),
 une prise par phrase (`public/audio/vo/01.mp3` … `16.mp3`, volume harmonisé à −15 LUFS).
 Les prises sources sont dans le flow ElevenLabs « AroSoft — Voix-off motion design ».
 
