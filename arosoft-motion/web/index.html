@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AroSoft — Motion Design</title>
+  <meta name="description" content="Cette vidéo n'a jamais été filmée. Découvrez le motion design AroSoft." />
+  <meta property="og:image" content="assets/arosoft-motion-cover.png" />
+  <link rel="icon" href="assets/arosoft-symbol-transparent.png" />
+  <style>
+    :root { --night:#101D3C; --abyss:#08112A; --electric:#086CF0; --cyan:#079CEF; --light:#E7EDF5; }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100vh; background: radial-gradient(120% 80% at 50% 20%, #142a5c, var(--night) 45%, var(--abyss));
+      color: #fff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex; flex-direction: column; align-items: center; padding: 32px 16px 48px; gap: 24px;
+    }
+    header { display: flex; align-items: center; gap: 12px; }
+    header img { width: 44px; filter: drop-shadow(0 0 1px rgba(255,255,255,.85)); }
+    header strong { font-size: 22px; letter-spacing: 3px; }
+    header strong span { color: var(--electric); }
+    .player {
+      width: min(420px, 100%); aspect-ratio: 9 / 16; border-radius: 24px; overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.08); background: #000;
+    }
+    .player video { width: 100%; height: 100%; display: block; object-fit: cover; background: #000; }
+    .cta { text-align: center; max-width: 420px; line-height: 1.5; color: var(--light); }
+    .cta a {
+      display: inline-block; margin-top: 12px; padding: 14px 26px; border-radius: 999px;
+      background: var(--electric); color: #fff; font-weight: 700; text-decoration: none; letter-spacing: .5px;
+    }
+    footer { font-size: 13px; letter-spacing: 4px; color: #8A9BBE; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/arosoft-symbol-transparent.png" alt="" />
+    <strong><span>ARO</span>SOFT</strong>
+  </header>
+
+  <div class="player">
+    <!-- La couverture (poster) s'affiche avant même que l'on clique sur Lecture -->
+    <video controls playsinline preload="metadata" poster="assets/arosoft-motion-cover.png">
+      <source src="videos/arosoft-motion-final.mp4" type="video/mp4" />
+      Votre navigateur ne lit pas la vidéo MP4.
+    </video>
+  </div>
+
+  <p class="cta">
+    Vous voulez votre propre vidéo motion design&nbsp;?<br />
+    Écrivez <strong>« MOTION »</strong> en message privé ou contactez-nous sur WhatsApp.<br />
+    <a href="https://wa.me/2250584060606?text=MOTION">WhatsApp · +225 05 84 06 06 06</a>
+  </p>
+  <footer>APPRENDRE • CRÉER • RÉUSSIR</footer>
+</body>
+</html>

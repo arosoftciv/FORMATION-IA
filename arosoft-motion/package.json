@@ -1,0 +1,30 @@
+{
+  "name": "arosoft-motion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AroSoft — publicité motion design premium (Remotion)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts AroSoftAd out/arosoft-motion-final.mp4 --codec=h264 --audio-codec=aac --crf=18",
+    "render:4k": "remotion render src/index.ts AroSoftAd out/arosoft-motion-final-4k.mp4 --scale=2 --codec=h264 --audio-codec=aac --crf=18",
+    "cover": "remotion still src/index.ts Cover out/arosoft-motion-cover.png",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/montserrat": "^5.1.0",
+    "@remotion/cli": "4.0.290",
+    "@remotion/fonts": "^4.0.290",
+    "@remotion/google-fonts": "4.0.290",
+    "@remotion/motion-blur": "4.0.290",
+    "@remotion/paths": "4.0.290",
+    "@remotion/shapes": "4.0.290",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.290"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
